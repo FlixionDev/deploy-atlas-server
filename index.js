@@ -3,7 +3,7 @@ const connect=require('./connect');
 const router=require('./route');
 require('dotenv').config();
 const server=process.env.PORT || 3200;
-
+console.log(server)
 const app=express();
 app.use(express.json());
 app.use('/',router)
